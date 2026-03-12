@@ -277,7 +277,7 @@ const server = http.createServer(async (req, res) => {
   res.end('Not found');
 });
 
-server.listen(PORT, () => {
+server.listen(PORT, '0.0.0.0', () => {
   console.log(`\n╔════════════════════════════════════════════╗`);
   console.log(`║   ANDWELL CRM — WEBHOOK SERVER             ║`);
   console.log(`║   Port: ${String(PORT).padEnd(35)}║`);
